@@ -1,0 +1,142 @@
+.app{
+    background: linear-gradient(135deg,rgb(226, 246, 128),rgb(21, 89, 190));
+    border-radius: 10px;
+    height: 500px;
+    width: 90%;
+    max-width: 470px;
+    margin: 70px auto;
+    padding: 40px 35px;
+}
+.search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    border:0;
+    border-radius: 50px;
+    margin:10px;
+    padding:20px;
+}
+.search img{
+    border-radius: 30px;
+    height:55px;
+    width:55px
+}
+button{
+    border-radius: 30px;
+    border-color: none;
+    border: 0;   
+}
+button:hover{
+    cursor: pointer;
+}
+.wheather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wheather img{
+    height:100px;
+    width:100px;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin-top:20px;
+    padding: 0;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    align-items: center;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 40px;
+}
+.col img{
+    width:40px;
+    margin-right: 20px;
+}
+.info img{
+    height:50px;
+    width:50px;
+
+}
+.write{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hum,.wind{
+    font-size: 28px;
+    margin-top: 10px;
+}
+p{
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .app {
+        /* Adjusting the width to fit smaller screens */
+        width: 90%;
+        max-width: none; /* Removing the max-width restriction for smaller screens */
+        margin: 30px auto; /* Adjusting the margin for better centering on smaller screens */
+        padding: 20px; /* Adjusting padding for better spacing on smaller screens */
+    }
+    
+    .search input {
+        padding: 15px; /* Reducing input padding for smaller screens */
+    }
+    
+    .search img {
+        height: 45px; /* Reducing the height of the search button icon */
+        width: 45px; /* Reducing the width of the search button icon */
+    }
+    
+    .wheather img {
+        height: 80px; /* Reducing the height of the weather image */
+        width: 80px; /* Reducing the width of the weather image */
+    }
+    
+    .temp, .city {
+        font-size: 35px; /* Reducing the font size of temperature and city for smaller screens */
+    }
+    
+    .info {
+        flex-direction: column; /* Stacking info items vertically on smaller screens */
+        justify-content: center; /* Centering info items vertically on smaller screens */
+    }
+    
+    .col {
+        margin-top: 20px; /* Adjusting margin between info columns */
+        text-align: center; /* Centering text in info columns */
+    }
+    
+    .col img {
+        margin-right: 0; /* Removing margin between icon and text in info columns */
+        margin-bottom: 10px; /* Adding margin below icons in info columns */
+    }
+    
+    .hum, .wind {
+        font-size: 20px; /* Reducing font size of humidity and wind text */
+    }
+}
